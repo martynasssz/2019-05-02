@@ -1,37 +1,39 @@
 <?php
-$kintamasis =rand(0,1);
-//
-//if($kintamasis <1 ){
-//    print 'sauleta';
-//}  else
-//{ print 'debesuota';
-//
-//}
+$kintamasis =date('s')%2;
+
+print $kintamasis;
+print date('s');
+
 ?>
 
 <html>
 <head>
     <style>
-      .sauleta {
+      .kvadratas {
           background-color: yellow;
-          height: 100px;
-          width: 100px;
+          height: 50px;
+          width: 50px;
+          border:3px solid black;
       }
-      .debesuota {
-          background-color: blue;
-          height: 100px;
-          width: 100px;
+      .apskritimas {
+          background-color: yellow;
+          height: 50px;
+          width: 50px;
+          border:3px solid black;
+          border-radius:50px;
       }
     </style>
 
 </head>
 <body>
-<?php if ($kintamasis<1):?>
+<?php if ($kintamasis==0):?>
 
-<div class="sauleta"> </div>
+<div class="kvadratas"> </div>
 
 <?php else: ?>
-<div class="debesuota"> </div>
+
+    <div class="apskritimas"> </div>
+
 
 
 <?php endif?>
@@ -41,4 +43,19 @@ $kintamasis =rand(0,1);
 </body>
 
 </html>
+
+
+<?php
+
+$sauleta= rand(0,1);
+$lyja= rand(0,1);
+
+
+
+if (){
+    if (){
+    } else {
+    }
+}else
+
 
